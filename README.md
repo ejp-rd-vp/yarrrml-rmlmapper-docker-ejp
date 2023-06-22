@@ -7,6 +7,9 @@ services:
   yarrml-rdfizer: 
     image: markw/yarrrml-rml-ejp:0.0.1
     container_name: yarrrml-rdfizer
+    environment:
+      # choices: nquads (default), trig, trix, jsonld, hdt, turtle
+      - SERIALIZATION=nquads
     ports:
       - "4567:4567"
     volumes:
