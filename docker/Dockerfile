@@ -3,7 +3,7 @@
 FROM openjdk:18-ea-11-alpine
 
 # install everything needed
-RUN apk add --no-cache bash nodejs npm wget maven git && cd / && \
+RUN apk add --no-cache bash nodejs npm wget nmap-ncat maven git && cd / && \
     ########## YARRRML-parser ##########
     wget https://github.com/RMLio/yarrrml-parser/archive/refs/heads/master.zip && \
     unzip master.zip && rm master.zip && \
@@ -20,8 +20,15 @@ RUN apk add --no-cache bash nodejs npm wget maven git && cd / && \
     cd / && \
     mkdir /mnt/data
 
-COPY map.sh /map.sh
+RUN apk add alpine-sdk ruby ruby-bundler ruby-dev
+# Clean APK cache
+RUN rm -rf /var/cache/apk/*
+RUN mkdir /usr/app
+WORKDIR /usr/app
+COPY . /usr/app
+RUN bundle install
 
-VOLUME ["/mnt/data"]
+RUN chmod a+x entrypoint.sh
 
-ENTRYPOINT ["/map.sh"]
+
+ENTRYPOINT ["./entrypoint.sh"]

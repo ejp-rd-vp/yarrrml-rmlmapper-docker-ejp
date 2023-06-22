@@ -1,0 +1,49 @@
+@prefix : <http://mapping.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://ejp-rd.eu/ids/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ndfrt: <http://purl.bioontology.org/ontology/NDFRT/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pico: <http://data.cochrane.org/ontologies/pico/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sio: <https://semanticscience.org/resource/> .
+@prefix this: <http://marks.test/this/> .
+@prefix vocab: <https://ejp-rd.eu/vocab/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://marks.test/this/individual_12345#Person> a vocab:Person;
+  sio:has-quality <http://marks.test/this/individual__12345_abcde#height_quality>;
+  sio:has-role <http://marks.test/this/individual_12345_abcde#thisRole> .
+
+<http://marks.test/this/individual_12345_abcde#ID> a vocab:identifier;
+  sio:denotes <http://marks.test/this/individual_12345_abcde#thisRole>;
+  sio:has-value "12345" .
+
+<http://marks.test/this/individual_12345_abcde#some_height_measuring_process> a obo:VT_0004370;
+  rdfs:label "ulnar length (VT)";
+  sio:has-output <http://marks.test/this/individual__12345_abcde#some_height_measuring_process_Output>;
+  sio:start-time "2019-02-28T00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://marks.test/this/individual_12345_abcde#thisRole> a obo:OBI_0000093;
+  rdfs:label "Patient";
+  sio:is-realized-in <http://marks.test/this/individual_12345_abcde#some_height_measuring_process> .
+
+<http://marks.test/this/individual__12345_abcde#height_quality> a obo:PATO_0000119;
+  rdfs:label "Height quality (PATO)" .
+
+<http://marks.test/this/individual__12345_abcde#some_height_measuring_process_Output>
+  a <http://www.ebi.ac.uk/efo/EFO_0004339>, sio:measurement-value;
+  rdfs:comment "Notes:  Height measurement type (default http://www.ebi.ac.uk/efo/EFO_0004339) may be estimated by ulnar length (recorded as ulnar length trait - http://purl.obolibrary.org/obo/VT_0004370 - and ulnar length measurement type - (http://purl.obolibrary.org/obo/CMO_0000440) ";
+  rdfs:label "body height (EFO)";
+  sio:has-unit <http://marks.test/this/individual__12345_abcde#some_height_measuring_process_Output_unit>;
+  sio:has-value "23"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://marks.test/this/individual__12345_abcde#some_height_measuring_process_Output_unit>
+  rdfs:label "cm" .
