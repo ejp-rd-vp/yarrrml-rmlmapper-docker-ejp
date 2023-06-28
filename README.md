@@ -35,3 +35,11 @@ sources:
     referenceFormulation: jsonpath
     iterator: "$.policies[*]"
 ```
+
+## Examples for ODRL
+
+Exemplar output from the ODRL Builder (https://hub.docker.com/r/markw/odrl-builder-translator) and its 
+associated YARRRML template are in the ./examples folder.
+
+`odrl.json`  is the output from the builder tool
+`odrl_yarrrml.yaml` is the template to convert that output into ODRL-compliant triples

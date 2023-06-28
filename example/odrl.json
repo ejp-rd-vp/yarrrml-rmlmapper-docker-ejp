@@ -1,0 +1,109 @@
+{
+    "policies": [
+        {
+            "id": 3782411501,
+            "type": "http://www.w3.org/ns/odrl/2/Offer",
+            "creator": "https://orcid.org/0000-0001-6960-357X",
+            "description": "A deal I made with Toshiaki",
+            "issued": "2023-06-27",
+            "rules": {
+                "permissions": [
+                    {
+                        "id": 648994849,
+                        "type": "http://www.w3.org/ns/odrl/2/permission",
+                        "policy_id": 3782411501,
+                        "cce": "collaboration",
+                        "targets": [
+                            {
+                                "id": 385549868,
+                                "policy_id": 3782411501,
+                                "rule_id": 648994849,
+                                "uri": "http://mark.wilkinson/data/polyA",
+                                "type": "http://www.w3.org/ns/odrl/2/Asset",
+                                "uid": "http://mark.wilkinson/data/polyA",
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "id": 2104824913,
+                                "policy_id": 3782411501,
+                                "rule_id": 648994849,
+                                "value": "http://www.w3.org/ns/odrl/2/use",
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                },
+                                "refinements": [
+                                    {
+                                        "id": 1160602733,
+                                        "policy_id": 3782411501,
+                                        "left_operand": "http://www.w3.org/ns/odrl/2/event",
+                                        "operator": "http://www.w3.org/ns/odrl/2/eq",
+                                        "valueType": "iri",
+                                        "right_operand_value_iri": "https://2023.biohackathon.org",
+                                        "right_operand_value_string": null,
+                                        "right_operand_value_duration": null,
+                                        "right_operand_value_date": null,
+                                        "right_operand_value_dateTime": null,
+                                        "right_operand_value_float": null,
+                                        "rule_id": 648994849,
+                                        "action_id": 2104824913,
+                                        "next": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "assigner": "https://orcid.org/0000-0001-6960-357X",
+                        "assignees": [
+                            {
+                                "id": 166147067,
+                                "policy_id": 3782411501,
+                                "rule_id": 648994849,
+                                "type": "http://www.w3.org/ns/odrl/2/Party",
+                                "uri": "https://orcid.org/0000-0003-2391-0384",
+                                "uid": "https://orcid.org/0000-0003-2391-0384",
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "constraints": [],
+                        "operand": null,
+                        "first": null,
+                        "logical_constraints": {
+                            "and": [],
+                            "or": [],
+                            "andSequence": [],
+                            "xone": []
+                        },
+                        "duties": []
+                    }
+                ],
+                "prohibitions": [],
+                "obligations": []
+            },
+            "references": []
+        }
+    ]
+}
