@@ -1,0 +1,19 @@
+<https://example.com/policies/3782411501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Offer>.
+<https://example.com/policies/3782411501> <http://purl.org/dc/terms/creator> "https://orcid.org/0000-0001-6960-357X".
+<https://example.com/policies/3782411501> <http://purl.org/dc/terms/issued> "2023-06-27"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://example.com/policies/3782411501> <http://purl.org/dc/terms/description> "A deal I made with Toshiaki".
+<https://example.com/policies/3782411501> <http://www.w3.org/ns/odrl/2/permission> <https://example.com/policies/3782411501/permissions/648994849>.
+<https://example.com/policies/3782411501/permissions/648994849> <http://purl.org/dc/elements/subject> "collaboration".
+<https://example.com/policies/3782411501/permissions/648994849> <http://www.w3.org/ns/odrl/2/assigner> <https://orcid.org/0000-0001-6960-357X>.
+<https://example.com/policies/3782411501/permissions/648994849> <http://www.w3.org/ns/odrl/2/assignee> <https://example.com/policies/3782411501/permissions/648994849/assignees/166147067>.
+<https://example.com/policies/3782411501/permissions/648994849> <http://www.w3.org/ns/odrl/2/target> <https://example.com/policies/3782411501/permissions/648994849/targets/385549868>.
+<https://example.com/policies/3782411501/permissions/648994849> <http://www.w3.org/ns/odrl/2/action> <https://example.com/policies/3782411501/permissions/648994849/actions/2104824913>.
+<https://example.com/policies/3782411501/permissions/648994849/assignees/166147067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Party>.
+<https://example.com/policies/3782411501/permissions/648994849/assignees/166147067> <http://www.w3.org/ns/odrl/2/uid> <https://orcid.org/0000-0003-2391-0384>.
+<https://example.com/policies/3782411501/permissions/648994849/targets/385549868> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Asset>.
+<https://example.com/policies/3782411501/permissions/648994849/targets/385549868> <http://www.w3.org/ns/odrl/2/uid> <http://mark.wilkinson/data/polyA>.
+<https://example.com/policies/3782411501/permissions/648994849/actions/2104824913> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/ns/odrl/2/use>.
+<https://example.com/policies/3782411501/permissions/648994849/actions/2104824913> <http://www.w3.org/ns/odrl/2/refinement> <https://example.com/policies/3782411501/permissions/648994849/actions/2104824913/refinements/1160602733>.
+<https://example.com/policies/3782411501/permissions/648994849/actions/2104824913/refinements/1160602733> <http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/ns/odrl/2/event>.
+<https://example.com/policies/3782411501/permissions/648994849/actions/2104824913/refinements/1160602733> <http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/ns/odrl/2/eq>.
+<https://example.com/policies/3782411501/permissions/648994849/actions/2104824913/refinements/1160602733> <http://www.w3.org/ns/odrl/2/rightOperand> <https://2023.biohackathon.org>.
