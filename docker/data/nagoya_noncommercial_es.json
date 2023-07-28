@@ -1,0 +1,229 @@
+{
+    "policies": [
+        {
+            "id": 1942853222,
+            "type": "http://www.w3.org/ns/odrl/2/Offer",
+            "creator": "Mark Wilkinson",
+            "description": "Representation of the Spanish BOE 124-2017 Dec 10, 2022 Rules around the use of wild germplasm, consistent with Nagoya Protocol",
+            "issued": "2023-06-29",
+            "rules": {
+                "permissions": [
+                    {
+                        "id": 2550781178,
+                        "type": "http://www.w3.org/ns/odrl/2/permission",
+                        "policy_id": 1942853222,
+                        "cce": "commercial_entity",
+                        "targets": [
+                            {
+                                "id": 3463423206,
+                                "policy_id": 1942853222,
+                                "rule_id": 2550781178,
+                                "uri": "https://fdp.bgv.cbgp.upm.es/dataset/65ffbf3d-bed1-4a9a-abf9-0116cc35b40a",
+                                "type": "http://www.w3.org/ns/odrl/2/Asset",
+                                "uid": "https://fdp.bgv.cbgp.upm.es/dataset/65ffbf3d-bed1-4a9a-abf9-0116cc35b40a",
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "id": 4057523220,
+                                "policy_id": 1942853222,
+                                "rule_id": 2550781178,
+                                "value": "http://www.w3.org/ns/odrl/2/use",
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                },
+                                "refinements": [
+                                    {
+                                        "id": 1558326604,
+                                        "policy_id": 1942853222,
+                                        "left_operand": "http://www.w3.org/ns/odrl/2/industry",
+                                        "operator": "http://www.w3.org/ns/odrl/2/neq",
+                                        "valueType": "iri",
+                                        "right_operand_value_iri": "https://w3id.org/dingo#ForProfitOrganisation",
+                                        "right_operand_value_string": null,
+                                        "right_operand_value_duration": null,
+                                        "right_operand_value_date": null,
+                                        "right_operand_value_dateTime": null,
+                                        "right_operand_value_float": null,
+                                        "rule_id": 2550781178,
+                                        "action_id": 4057523220,
+                                        "next": 161014737
+                                    },
+                                    {
+                                        "id": 161014737,
+                                        "policy_id": 1942853222,
+                                        "left_operand": "http://www.w3.org/ns/odrl/2/purpose",
+                                        "operator": "http://www.w3.org/ns/odrl/2/neq",
+                                        "valueType": "iri",
+                                        "right_operand_value_iri": "http://purl.obolibrary.org/obo/ExO_0000085",
+                                        "right_operand_value_string": null,
+                                        "right_operand_value_duration": null,
+                                        "right_operand_value_date": null,
+                                        "right_operand_value_dateTime": null,
+                                        "right_operand_value_float": null,
+                                        "rule_id": 2550781178,
+                                        "action_id": 4057523220,
+                                        "next": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "assigner": "https://absch.cbd.int/en/database/CON/ABSCH-CON-ES-241810/2",
+                        "assignees": [
+                            {
+                                "id": 3536835392,
+                                "policy_id": 1942853222,
+                                "rule_id": 2550781178,
+                                "uid": null,
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "id": 2409180771,
+                                "policy_id": 1942853222,
+                                "left_operand": "http://www.w3.org/ns/odrl/2/purpose",
+                                "operator": "http://www.w3.org/ns/odrl/2/neq",
+                                "valueType": "iri",
+                                "right_operand_value_iri": "http://webprotege.stanford.edu/RCLMtDxe1kft47HyVjyb46N ",
+                                "right_operand_value_string": null,
+                                "right_operand_value_duration": null,
+                                "right_operand_value_date": null,
+                                "right_operand_value_dateTime": null,
+                                "right_operand_value_float": null,
+                                "rule_id": 2550781178,
+                                "next": null
+                            }
+                        ],
+                        "operand": null,
+                        "first": null,
+                        "logical_constraints": {
+                            "and": [],
+                            "or": [],
+                            "andSequence": [],
+                            "xone": []
+                        },
+                        "duties": []
+                    }
+                ],
+                "prohibitions": [],
+                "obligations": [
+                    {
+                        "id": 394546150,
+                        "type": "http://www.w3.org/ns/odrl/2/obligation",
+                        "policy_id": 1942853222,
+                        "cce": "commercial_entity",
+                        "targets": [
+                            {
+                                "id": 840516282,
+                                "policy_id": 1942853222,
+                                "rule_id": 394546150,
+                                "uri": "https://fdp.bgv.cbgp.upm.es/dataset/65ffbf3d-bed1-4a9a-abf9-0116cc35b40a",
+                                "type": "http://www.w3.org/ns/odrl/2/Asset",
+                                "uid": "https://fdp.bgv.cbgp.upm.es/dataset/65ffbf3d-bed1-4a9a-abf9-0116cc35b40a",
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "id": 76111039,
+                                "policy_id": 1942853222,
+                                "rule_id": 394546150,
+                                "value": "http://www.w3.org/ns/odrl/2/use",
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                },
+                                "refinements": [
+                                    {
+                                        "id": 1408490486,
+                                        "policy_id": 1942853222,
+                                        "left_operand": "http://www.w3.org/ns/odrl/2/payAmount",
+                                        "operator": "http://www.w3.org/ns/odrl/2/hasPart",
+                                        "valueType": "iri",
+                                        "right_operand_value_iri": "http://schema.org/DigitalDocumentPermission",
+                                        "right_operand_value_string": null,
+                                        "right_operand_value_duration": null,
+                                        "right_operand_value_date": null,
+                                        "right_operand_value_dateTime": null,
+                                        "right_operand_value_float": null,
+                                        "rule_id": 394546150,
+                                        "action_id": 76111039,
+                                        "next": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "assigner": "https://absch.cbd.int/en/database/CON/ABSCH-CON-ES-241810/2",
+                        "assignees": [
+                            {
+                                "id": 1855108331,
+                                "policy_id": 1942853222,
+                                "rule_id": 394546150,
+                                "uid": null,
+                                "source": null,
+                                "refinements": [],
+                                "operand": null,
+                                "first": null,
+                                "logical_constraints": {
+                                    "and": [],
+                                    "or": [],
+                                    "andSequence": [],
+                                    "xone": []
+                                }
+                            }
+                        ],
+                        "constraints": [],
+                        "operand": null,
+                        "first": null,
+                        "logical_constraints": {
+                            "and": [],
+                            "or": [],
+                            "andSequence": [],
+                            "xone": []
+                        },
+                        "consequences": []
+                    }
+                ]
+            },
+            "references": []
+        }
+    ]
+}
