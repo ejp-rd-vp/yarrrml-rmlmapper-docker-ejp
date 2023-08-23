@@ -5,7 +5,7 @@ services:
 
   
   yarrml-rdfizer: 
-    image: markw/yarrrml-rml-ejp:0.0.1
+    image: markw/yarrrml-rml-ejp:0.0.3
     container_name: yarrrml-rdfizer
     environment:
       # choices: nquads (default), trig, trix, jsonld, hdt, turtle
