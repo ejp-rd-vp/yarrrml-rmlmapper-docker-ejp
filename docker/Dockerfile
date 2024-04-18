@@ -1,6 +1,9 @@
 # YARRRML + RMLMapper
 
-FROM openjdk:18-ea-11-alpine
+ FROM openjdk:18-ea-11-alpine
+#FROM openjdk:19-jdk-alpine3.16
+#apk add --upgrade apk-tools
+#apk  upgrade --available
 
 # install everything needed
 RUN apk add --no-cache bash nodejs npm wget nmap-ncat maven git && cd / && \
