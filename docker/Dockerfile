@@ -3,7 +3,6 @@
 # FROM openjdk:18-ea-11-alpine
 FROM eclipse-temurin:22_36-jdk-alpine
 
-
 # install everything needed
 RUN apk add --no-cache bash nodejs npm wget nmap-ncat maven git && cd / && \
     ########## YARRRML-parser ##########
