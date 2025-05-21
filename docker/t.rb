@@ -49,21 +49,26 @@ get '/:type' do
   lines_per_file = 200
   split_csv(input_csv_file, lines_per_file)
 
-  Dir.glob(File.join('/mnt/data/tmp', '*.csv')) do |file|
+  Dir.glob(File.join('/mnt/data/tmp', '*.csv')) do |file|  # e.g. /mnt/data/tmp/CARE_part_5.csv
     # Copy the file to the destination folder
-    destination_file = File.join('/mnt/data/', "CARE.csv")  # this will overwrite
-    FileUtils.cp(file, destination_file)
+    destination_file = File.join('/mnt/data/', "CARE.csv")  # this will overwrite - necessary because the yarrrml is set to CARE.csv as the source
+    FileUtils.cp(file, destination_file)   # this will overwrite - necessary because the yarrrml is set to CARE.csv as the source
   
-    # Execute the operation on the copied file
-    a, b, c = Open3.capture3("bash map.sh #{yarrrml} --outputfile /mnt/data/tmp/#{File.basename(file)}.#{extension} --serialization #{serialization}")
+    # Execute the transformation on the copied file (uses CARE_yarrrml.yaml and CARE.csv)
+    _a, _b,_c = Open3.capture3("bash map.sh #{yarrrml} --outputfile /mnt/data/tmp/#{File.basename(file)}.#{extension} --serialization #{serialization}")
   
     puts "Copied and processed #{File.basename(file)}"
   end
-  
+
+  # now we should have a bunch of e.g. /mnt/data/tmp/CARE_part_5.nq
+  # for each of them, concatenate it to /mnt/data/triples/CARE.nq
   Dir.glob(File.join('/mnt/data/tmp', "*.#{extension}")) do |file|
-    # Copy the file to the destination folder
     `cat #{file} >> /mnt/data/triples/CARE.nq`
   end
+
+  # reset the original csv file
+  FileUtils.cp("#{input_csv_file}_BAK", input_csv_file)
+
 end
 
 
